@@ -8,6 +8,9 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+	fontFamily: {
+		cairoli: ['var(--font-cairoli)'],
+	  },
   	extend: {
   		colors: {
   			background: 'hsl(var(--background))',

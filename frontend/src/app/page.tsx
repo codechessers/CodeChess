@@ -1,10 +1,9 @@
-// import Image from "next/image";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 export default function Home() {
   return (
-    <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_400px,#3e3e3e,transparent)] bg-slate-950 flex flex-col max-h-screen">
+    <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_400px,#474747,transparent)] bg-black flex flex-col max-h-screen font-cairoli">
       <Header />
       <MaxWidthWrapper>
         <div className="relative flex items-center justify-center">

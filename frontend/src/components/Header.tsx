@@ -88,7 +88,7 @@ function NavLink({
   return (
     <Link
       href={href}
-      className="text-gray-200 transition-all duration-300 hover:text-[#b2ff14]"
+      className="text-gray-200 transition-all duration-300 hover:text-[#b2ff14] text-xl"
     >
       {children}
     </Link>
