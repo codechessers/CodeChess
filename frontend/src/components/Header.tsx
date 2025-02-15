@@ -1,41 +1,4 @@
-// import Link from 'next/link'
-
-// const Header = () => {
-//   return (
-//     <nav className="fixed w-full z-50 backdrop-blur-lg bg-opacity-30 bg-transparent  p-3">
-//       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
-//         <div className="flex items-center justify-between h-16">
-//           <Link href="/" className="text-4xl font-bold text-white hover:text-gray-200">
-//             <span className='text-[#b2ff14]'>{'{CC}'}</span>
-//           </Link>
-
-//           <div className="flex space-x-4">
-//             <Link
-//               href="/play"
-//               className="text-gray-200 hover:text-white px-3 py-2 rounded-lg text-lg font-medium"
-//             >
-//               Play
-//             </Link>
-//             <Link
-//               href="/learn"
-//               className="text-gray-200 hover:text-white px-3 py-2 rounded-lg text-lg font-medium"
-//             >
-//               Learn
-//             </Link>
-//             <Link
-//               href="/profile"
-//               className="text-gray-200 hover:text-white px-3 py-2 rounded-lg text-lg font-medium"
-//             >
-//               Profile
-//             </Link>
-//           </div>
-//         </div>
-//       </div>
-//     </nav>
-//   )
-// }
-
-// export default Header
+"use client";
 import React from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
@@ -43,7 +6,7 @@ import { Button } from "./ui/button";
 export function Header() {
   return (
     <header className="fixed left-1/2 top-8 z-50 mx-auto w-full max-w-5xl -translate-x-1/2 transform p-3">
-      <div className="relative flex items-center justify-between rounded-full border border-[#b2ff14]/30 bg-black/60 px-4 py-4 backdrop-blur-xl">
+      <div className="relative flex items-center justify-between rounded-full border-2 border-[#b2ff14]/50 bg-blue/60 px-4 py-4 backdrop-blur-xl">
         <Link
           href="/"
           className="flex items-center text-white text-2xl space-x-1"
@@ -69,9 +32,10 @@ export function Header() {
           </nav>
         </div>
 
-        {/* This div maintains the space taken by the logo */}
         <div className="flex items-center mr-2">
-          <Button className="bg-[#b2ff14] text-black text-xl">Login</Button>
+          <Button className="bg-[#b2ff14] hover:bg-[#9bd12e] text-black text-xl">
+            Login
+          </Button>
         </div>
       </div>
     </header>

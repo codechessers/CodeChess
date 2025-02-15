@@ -20,7 +20,7 @@ const Hero = () => {
             <div>
               <Button
                 size="lg"
-                className="text-base sm:text-lg md:text-xl border border-[#b2ff14] w-full sm:w-auto p-7"
+                className="text-base sm:text-lg md:text-xl border border-[#b2ff14] w-full sm:w-auto py-7 px-10"
               >
                 Play Now
               </Button>
@@ -28,9 +28,9 @@ const Hero = () => {
             <div>
               <Button
                 size="lg"
-                className="text-base sm:text-lg md:text-xl w-full sm:w-auto p-7 bg-[#b2ff14] text-black"
+                className="text-base border border-black sm:text-lg md:text-xl w-full sm:w-auto py-7 px-10 bg-[#b2ff14] text-black hover:bg-[#9bd12e]"
               >
-                How It Works
+                How To Play
               </Button>
             </div>
           </div>

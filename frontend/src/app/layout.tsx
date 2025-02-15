@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${cairoli.variable} antialiased bg-slate-950`}>
+      <body className={`${cairoli.variable} antialiased`}>
         {children}
       </body>
     </html>
