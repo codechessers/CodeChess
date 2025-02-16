@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center space-y-8 text-center justify-center">
           <div className="space-y-4 text-center max-w-8xl">
-            <h1 className="text-3xl font-extrabold sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl text-[#b2ff14] z-10">
+            <h1 className="text-3xl font-extrabold sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl bg-gradient-to-t from-gray-300 via-[#b1ff14ea] to-[#b2ff14] bg-clip-text text-transparent z-10">
               Code. Challenge. Conquer.
             </h1>
             <p className="mx-auto max-w-full text-gray-200 text-lg sm:text-xl md:text-2xl">
