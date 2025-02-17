@@ -19,13 +19,12 @@ const Hero = () => {
           </div>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <div>
-            <Button
-  className="bg-black text-[#b2ff14] text-2xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_#b2ff14] hover:text-black hover:bg-[#b2ff14]"
-  borderRadius="1.01rem"
->
-  Play Now
-</Button>
-
+              <Button
+                className="bg-black text-[#b2ff14] text-2xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_#b2ff14] hover:text-black hover:bg-[#b2ff14]"
+                borderRadius="1.01rem"
+              >
+                Play Now
+              </Button>
             </div>
             {/* <div>
               <Button

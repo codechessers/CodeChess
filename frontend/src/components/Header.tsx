@@ -32,7 +32,7 @@ export function Header() {
         </div>
 
         <div className="flex items-center mr-2">
-          <Button className="bg-[#b2ff14] hover:bg-[#9bd12e] text-black text-xl">
+          <Button className="bg-[#b2ff14] text-black text-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_3px_#b2ff14] hover:bg-black hover:text-[#b2ff14]">
             Login
           </Button>
         </div>
@@ -49,12 +49,14 @@ function NavLink({
   children: React.ReactNode;
 }) {
   return (
-    <Link
-      href={href}
-      className="text-gray-200 transition-all duration-300 hover:text-[#b2ff14] text-xl"
-    >
-      {children}
-    </Link>
+<Link
+  href={href}
+  className="text-gray-200 transition-all duration-300 hover:text-[#b2ff14] hover:scale-105 hover:drop-shadow-[0_0_3px_#b2ff14] text-xl"
+
+>
+  {children}
+</Link>
+
   );
 }
 
