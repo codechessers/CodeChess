@@ -2,6 +2,7 @@
 import Features from "@/components/Features";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import HowItWorks from "@/components/HowItWorks";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { WavyBackground } from "@/components/ui/wavy-background";
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
           <Features />
         </WavyBackground>
       </div>
+      <HowItWorks />
     </div>
   );
 }
