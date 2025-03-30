@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { cairoli } from "@/utils/customfonts";
 import "./globals.css";
+import ParticleBackground from "@/components/ParticleBackground";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,8 +15,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${cairoli.variable} antialiased bg-black`}>
-        {children}
+      <body className={`${cairoli.variable} antialiased bg-black font-cairoli`}>
+      <div className="relative min-h-screen">
+          <ParticleBackground />
+          <div className="relative z-1">
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );
