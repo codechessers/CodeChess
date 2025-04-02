@@ -29,6 +29,9 @@ model User {
 model Session {
   id        String   @id
   expiresAt DateTime
+  token     String   // Added from previous error
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt  // Add this field
   ipAddress String?
   userAgent String?
   userId    String
@@ -37,22 +40,26 @@ model Session {
   @@map("session")
 }
 
+
 model Account {
-  id           String    @id
-  accountId    String
-  providerId   String
-  userId       String
-  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
-  accessToken  String?
-  refreshToken String?
-  idToken      String?
-  expiresAt    DateTime?
-  password     String?
-  createdAt    DateTime  @default(now())
-  updatedAt    DateTime  @updatedAt
+  id                  String    @id
+  accountId           String
+  providerId          String
+  userId              String
+  user                User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  accessToken         String?
+  refreshToken        String?
+  idToken             String?
+  expiresAt           DateTime?
+  password            String?
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+  accessTokenExpiresAt DateTime? // Add this field
+  scope               String?   // Add this field
 
   @@map("account")
 }
+
 
 
 model Verification {
@@ -60,6 +67,8 @@ model Verification {
   identifier String
   value      String
   expiresAt  DateTime
+  createdAt  DateTime @default(now())  // Add this field
+  updatedAt  DateTime @updatedAt       // Add this field
 
   @@map("verification")
 }
